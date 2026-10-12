@@ -1,0 +1,36 @@
+{
+  "name": "@red-cup-engineering/workerbee-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "WORKERBEE self-stake-and-delegate yield planning against the ph1102 no-fee BEE mining pool, plus two-provider settlement of ph1102 -> michael561 pool distributions. Produces unsigned custom_json batches only.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "check": "for f in src/*.mjs; do node --check \"$f\" || exit 1; done",
+    "test": "node --test test/*.test.mjs"
+  },
+  "exports": {
+    ".": "./src/yield.mjs",
+    "./yield": {
+      "default": "./src/yield.mjs"
+    },
+    "./pool": {
+      "default": "./src/pool.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "hive",
+    "hive-engine",
+    "workerbee",
+    "sovereign-state-enterprise"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "workspace:*",
+    "@red-cup-engineering/gaming": "workspace:*",
+    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*",
+    "@red-cup-engineering/exact-number-data-service": "workspace:*"
+  }
+}
