@@ -1,5 +1,5 @@
 {
-  "name": "@red-cup-engineering/workerbee-engineering-services-section",
+  "name": "@red-cup-engineering/workerbee-services-section",
   "version": "0.1.1",
   "type": "module",
   "description": "WORKERBEE self-stake-and-delegate yield planning against the ph1102 no-fee BEE mining pool, plus two-provider settlement of ph1102 -> michael561 pool distributions. Produces unsigned custom_json batches only.",
