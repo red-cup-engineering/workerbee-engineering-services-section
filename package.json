@@ -7,12 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/workerbee-engineering-services-section.git"
   },
-  "engines": {
-    "node": ">=22.18"
-  },
-  "scripts": {
-    "check": "for f in src/*.mjs; do node --check \"$f\" || exit 1; done"
-  },
   "exports": {
     ".": "./src/yield.mjs",
     "./yield": {
@@ -23,29 +17,17 @@
     },
     "./package.json": "./package.json"
   },
-  "sideEffects": false,
-  "keywords": [
-    "hive",
-    "hive-engine",
-    "workerbee",
-    "sovereign-state-enterprise"
-  ],
   "dependencies": {
     "@red-cup-engineering/metrologic": "^0.22.3",
     "@red-cup-engineering/exact-number-codec": "^0.1.0",
     "@red-cup-engineering/gaming": "^0.2.9",
     "@red-cup-engineering/hive-blockchain-client-service": "^0.1.6"
   },
-  "private": false,
   "files": [
     "package.json",
     "README*",
     "LICENSE*",
     "src"
   ],
-  "license": "MIT",
-  "funding": {
-    "type": "individual",
-    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
-  }
+  "license": "MIT"
 }
